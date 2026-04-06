@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilos/problema6.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <h2>Calculadora</h2>
+
+        <form action="logicaphp/logica6.php" method="POST">
+            <input type="text" id="display" name="expresion" class="display" readonly>
+
+            <div class="buttons">
+                <button type="button" onclick="agregar('7')">7</button>
+                <button type="button" onclick="agregar('8')">8</button>
+                <button type="button" onclick="agregar('9')">9</button>
+                <button type="button" class="operator" onclick="agregar('+')">+</button>
+
+                <button type="button" onclick="agregar('4')">4</button>
+                <button type="button" onclick="agregar('5')">5</button>
+                <button type="button" onclick="agregar('6')">6</button>
+                <button type="button" class="operator" onclick="agregar('-')">-</button>
+
+                <button type="button" onclick="agregar('1')">1</button>
+                <button type="button" onclick="agregar('2')">2</button>
+                <button type="button" onclick="agregar('3')">3</button>
+                <button type="button" class="operator" onclick="agregar('*')">*</button>
+
+                <button type="button" onclick="agregar('0')">0</button>
+                <button type="button" onclick="borrar()">C</button>
+                <button type="button" class="operator" onclick="agregar('/')">/</button>
+                <button type="submit" class="equal">=</button>
+            </div>
+        </form>
+
+        <div class="back-button-container">
+            <a href="opciones.html" class="back-button">Volver</a>
+        </div>
+    </div>
+
+    <script src="js/calculadora.js"></script>
+
+</body>
+
+
+</html>
